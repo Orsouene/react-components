@@ -1,5 +1,12 @@
+// importo la funzione header
+import Header from "./Components/Header";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
