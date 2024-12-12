@@ -1,17 +1,24 @@
+import dolciItaliani from "../data/data";
+import Card from "./Card";
+// tiramisu
+const dolce = dolciItaliani.find(
+  (dolce) => dolce.titolo.toLowerCase() === "tiramisu"
+);
+// cannoli
+const dolce2 = dolciItaliani.find(
+  (dolce) => dolce.titolo.toLowerCase() === "cannoli"
+);
+// panettone
+const dolce3 = dolciItaliani.find(
+  (dolce) => dolce.titolo.toLowerCase() === "panettone"
+);
+
 function Main() {
   return (
-    <main>
-      <div className="card">
-        <img src="/img/grey.jpg" className="card-img-top" alt="..." />
-        <div className="card-body">
-          <h5 className="card-title">Titolo del posto</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <button href="#">LEGGI DI PIU</button>
-        </div>
-      </div>
+    <main className="container fluid">
+      <Card titolo="Tiramisu" dolciItaliani={dolce} />
+      <Card titolo="Cannoli" dolciItaliani={dolce2} />
+      <Card titolo="Panettone" dolciItaliani={dolce3} />
     </main>
   );
 }

@@ -1,4 +1,5 @@
-// importato Header
+// IMPOROT IL LINK DI BOOTSRAP
+import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/Header";
 // importato Main
 import Main from "./Components/Main";
